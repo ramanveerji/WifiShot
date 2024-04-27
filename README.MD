@@ -117,8 +117,6 @@ Please note that root access is required.
      --iface-down             : Down network interface when the work is finished
      -l, --loop               : Run in a loop
      -r, --reverse-scan       : Reverse order of networks in the list of networks. Useful on small displays
-     --mtk-wifi               : Activate MediaTek Wi-Fi interface driver on startup and deactivate it on exit
-                                (for internal Wi-Fi adapters implemented in MediaTek SoCs). Turn off Wi-Fi in the system settings before using this.
      -v, --verbose            : Verbose output
  ```
 
@@ -145,8 +143,6 @@ Launch online WPS bruteforce with the specified first half of the PIN:
 ```sudo rfkill unblock wifi```
 #### "Device or resource busy (-16)"
  Try disabling Wi-Fi in the system settings and kill the Network manager. Alternatively, you can try running OneShot with ```--iface-down``` argument.
-#### The wlan0 interface disappears when Wi-Fi is disabled on Android devices with MediaTek SoC
- Try running WifiShot with the `--mtk-wifi` flag to initialize Wi-Fi device driver.
 # Acknowledgements
 ## Special Thanks
 * `rofl0r` for initial implementation;
